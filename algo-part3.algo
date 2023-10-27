@@ -1,0 +1,15 @@
+ALGORITHM algorithm_name
+FUNCTION palindrome(str:STRING) : BOOLEAN
+VAR
+    i:INTEGER;
+BEGIN
+    IF (str[i]=1) THEN
+        RETURN TRUE;
+    END_IF
+    IF (str[i]= str[i-1]) THEN
+        RETURN palindrome (str[i ,i-1])
+    ELSE
+        RETURN FALSE;
+    END_IF
+     
+END
